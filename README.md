@@ -21,9 +21,11 @@ To persist the data, the image has a volume at `/data` defined. You can either a
 
 ### Examples
 Development instance:
+
     docker run -d -e CLUSTER_NAME=dev -v /home/lorenz/volumes/elasticsearch-dev:/data --rm lorenz/elasticsearch:1.4
 
 Production cluster:
+
     docker run -d -e CLUSTER_NAME=prod1 -e NODE_DATA=false -e NUM_SHARDS=10 -v /mnt/ssd1/elasticsearch1:/data --rm lorenz/elasticsearch:1.4
     docker run -d -e CLUSTER_NAME=prod1 -e NODE_DATA=true -e NODE_MASTER=false -e NUM_SHARDS=10 -v /mnt/ssd1/elasticsearch1:/data --rm lorenz/elasticsearch:1.4
     docker run -d -e CLUSTER_NAME=prod1 -e NODE_DATA=true -e NODE_MASTER=false -e NUM_SHARDS=10 -v /mnt/ssd1/elasticsearch1:/data --rm lorenz/elasticsearch:1.4
