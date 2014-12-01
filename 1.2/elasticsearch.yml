@@ -1,0 +1,7 @@
+cluster.name: %CLUSTER_NAME%
+node.master: %NODE_MASTER%
+node.data: %NODE_DATA%
+index.number_of_shards: %NUM_SHARDS%
+path.data: /data
+path.work: /tmp
+path.plugins: /app/plugins
