@@ -1,4 +1,4 @@
 docker-elasticsearch
 ====================
 
-ElasticSearch in Docker with all the version
+ElasticSearch in Docker with all the versions
